@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="lib/nprogress/nprogress.css">
+</head>
+<body>
+<div class="left">
+    <div class="head"><p>浙江大学</p></div>
+    <div class="user">
+        <img src="images/user.jpg" alt="">
+        <p>超级管理员</p>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="user.html"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
+            <li><a href="#" class="list-type"><i class="glyphicon glyphicon-list"></i><span>分类管理</span></a>
+                <a href="first.html" class="child" style="display: none">一级分类</a>
+                <a href="second.html" class="child current" style="display: none">二级分类</a>
+            </li>
+            <li><a href="product.html"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <div class="main-top">
+        <a href="#" class="pull-left icon-left"><i class="glyphicon glyphicon-align-justify"></i></a>
+        <a href="#" class="pull-right icon-right"><i class="glyphicon glyphicon-log-out"></i></a>
+    </div>
+    <div class="container-fluid main-area">
+
+        <ol class="breadcrumb" style="margin-top: 20px">
+            <li><a href="#">管理系统</a></li>
+            <li><a href="#">分类管理</a></li>
+            <li class="active">二级分类</li>
+        </ol>
+
+
+    </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" >
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" ><span>&times;</span></button>
+                <h4 class="modal-title">温馨提示</h4>
+            </div>
+            <div class="modal-body">
+                <p class="red"><i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="logout-btn">退出</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/common.js"></script>
+<script src="lib/nprogress/nprogress.js"></script>
+</body>
+</html>
