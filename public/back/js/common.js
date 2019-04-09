@@ -37,7 +37,7 @@ $(function() {
         $(".main-top").toggleClass("hiddenmenu")
     })
     $(".icon-right").click(function () {
-        $(".modal").modal("show");
+        $("#logoutmodel").modal("show");
     })
     $("#logout-btn").click(function () {
         $.ajax({

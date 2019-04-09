@@ -27,7 +27,32 @@ $(function (){
             }
         })
     }
+    var currentId;
+    var isDelete;
+    $("tbody").on("click",".btn",function () {
+        currentId = $(this).parent().data("id");
+        isDelete = $(this).hasClass("btn-danger")?0:1;
+        $("#userMordel").modal("show");
+    })
+
+    $("#user-btn").click(function () {
+        $.ajax({
+            url:"/user/updateUser",
+            type: "post",
+            dataType: "json",
+            data: {
+                id:currentId,
+                isDelete:isDelete,
+            },
+            success : function (info) {
+                console.log(info)
+                if (info.success) {
+                    $("#userMordel").modal("hide"),
+                        render();
+                }
+            }
+        })
+    })
 
 
-    ;
 })
