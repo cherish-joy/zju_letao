@@ -108,6 +108,7 @@ ul {
 .main {
     padding-top: 50px;
     padding-left: 180px;
+    height: 100%;
     transition: all 1s;
 }
 .main.hiddenmenu{
@@ -117,4 +118,13 @@ ul {
 .chart-right {
     width: 48%;
     height: 400px;
+}
+
+.main-area {
+    height: 100%;
+}
+.lt_content table thead th,
+.lt_content table tbody td{
+    text-align: center;
+    vertical-align: middle;
 }
