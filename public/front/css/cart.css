@@ -1,0 +1,26 @@
+.lt_item {
+    height: 110px;
+}
+.lt_item .cart_img {
+    height: 90px;
+    width: 60px;
+    float: left;
+}
+.lt_item .cart_info {
+    overflow: hidden;
+    height: 90px;
+    padding: 0 10px;
+}
+.lt_item .cart_info .pro_name {
+    color: #000000;
+
+}
+.lt_item .cart_info .price {
+    color: red;
+}
+.lt_item .cart_info .oldPrice{
+    text-decoration: line-through;
+}
+.mui-table-cell {
+    display: block;
+}
